@@ -22,8 +22,8 @@
     "node": "14.9.0"
 },
   "scripts": {
-    "start": "nf start",
-    "build": "bower install && grunt build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
