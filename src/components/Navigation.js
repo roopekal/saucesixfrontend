@@ -57,6 +57,8 @@ setValue(val);
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
     <Tab label="Vastaa kysymykseen" component={Link} to='/'/>
     <Tab label="testiradio" component={Link} to='/radio'/>
+    <Tab label="kyselyt" component={Link} to='/kyselyt' />
+    <Tab label="WIP" component={Link} to='/RadioKysymysApi'/>
    
     
    
@@ -79,7 +81,14 @@ setValue(val);
                 <ListItemIcon><CreateIcon /></ListItemIcon>                          
                 <ListItemText primary='Etusivu' />
             </MenuItem>
-            
+            <MenuItem onClick={ handleClose } component={Link} to='/kyselyt'>
+                <ListItemIcon><CreateIcon /></ListItemIcon>                          
+                <ListItemText primary='Etusivu' />
+            </MenuItem>
+            <MenuItem onClick={ handleClose } component={Link} to='/fasd'>
+                <ListItemIcon><CreateIcon /></ListItemIcon>                          
+                <ListItemText primary='Etusivu' />
+            </MenuItem>
             
             </Menu>
         </MenuList>

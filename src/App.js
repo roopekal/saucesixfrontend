@@ -8,7 +8,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ArrowDownward } from '@material-ui/icons';
 import { lightBlue, brown, amber, common, deepPurple, green, purple } from '@material-ui/core/colors';
 import FetchRadio from './components/FetchRadio'
-
+import Kyselyt from './components/Kyselyt'
+import Kysely from './components/Kysely'
+import RadioKysymysApi from './components/RadioKysymysApi'
 
 const theme = createMuiTheme({
     palette: {
@@ -32,6 +34,10 @@ function App() {
                 <Switch>
                   <Route path='/' exact component={Form}/>
                   <Route path='/radio' component={FetchRadio} />
+                  <Route path='/kyselyt' component={Kyselyt}/>
+                  <Route path='/kysely' component={Kysely} />
+                  <Route path='/RadioKysymysApi' component={RadioKysymysApi}/>
+                 
                 </Switch>
                 </div>
     
